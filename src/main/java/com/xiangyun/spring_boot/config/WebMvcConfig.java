@@ -11,5 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class WebMvcConfig extends WebMvcConfigurerAdapter {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/ws").setViewName("/ws");
+        registry.addViewController("/login").setViewName("/login");
+        registry.addViewController("/chat").setViewName("/chat");
     }
 }
